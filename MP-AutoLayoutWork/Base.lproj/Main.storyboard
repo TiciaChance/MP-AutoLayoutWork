@@ -111,6 +111,11 @@
                                     <constraint firstAttribute="height" constant="130" id="fdk-pY-Jrj"/>
                                 </constraints>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaE-aq-uDF">
+                                <frame key="frameInset" minX="144" minY="668" width="129" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Image Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -158,6 +163,7 @@
                     </view>
                     <connections>
                         <outlet property="chooseStateButton" destination="NjX-LQ-LpW" id="wzB-Ib-Jv7"/>
+                        <outlet property="imageButton" destination="iaE-aq-uDF" id="XOi-D1-ALL"/>
                         <outlet property="statePicker" destination="suc-o8-XRK" id="E4s-vM-rzu"/>
                     </connections>
                 </viewController>

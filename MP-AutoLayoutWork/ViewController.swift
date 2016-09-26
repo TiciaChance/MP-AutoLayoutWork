@@ -17,6 +17,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet weak var chooseStateButton: UIButton!
     
+    @IBOutlet weak var imageButton: UIButton!
+    
     let states = [ "Pon De Floor", "Be Together", "Lean On", "Light It Up", "Powerful", "All My Love", "Watch Out For This", "Night riders"]
     
     override func viewDidLoad() {
