@@ -18,12 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Major Lazer" translatesAutoresizingMaskIntoConstraints="NO" id="gVi-dP-tep">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="AZC-P9-dzP"/>
-                                    <constraint firstAttribute="width" constant="90" id="wW1-Cp-xwb"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGh-i6-iBY">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="144" id="SW4-Hy-qAh"/>
@@ -33,7 +27,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-Uj-L6S">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose Some Vibes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-Uj-L6S">
+                                <frame key="frameInset" minX="122" minY="196" width="172" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="NWE-S3-6sg"/>
                                     <constraint firstAttribute="height" constant="21" id="bN2-lt-svA"/>
@@ -95,8 +90,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjX-LQ-LpW">
-                                <frame key="frameInset" minX="20" minY="478" width="187" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjX-LQ-LpW">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0wh-L2-zAP"/>
                                     <constraint firstAttribute="width" constant="128" id="3dh-Ta-gSa"/>
@@ -111,11 +105,16 @@
                                     <constraint firstAttribute="height" constant="130" id="fdk-pY-Jrj"/>
                                 </constraints>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaE-aq-uDF">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaE-aq-uDF">
                                 <frame key="frameInset" minX="144" minY="668" width="129" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Image Button"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Major Lazer" translatesAutoresizingMaskIntoConstraints="NO" id="gVi-dP-tep">
+                                <frame key="frameInset" minX="130" minY="20" width="154" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="AZC-P9-dzP"/>
+                                    <constraint firstAttribute="width" constant="90" id="wW1-Cp-xwb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -126,6 +125,7 @@
                             <constraint firstItem="NjX-LQ-LpW" firstAttribute="leading" secondItem="d6b-NA-GgX" secondAttribute="leading" id="7Qy-Yq-uWl"/>
                             <constraint firstItem="suc-o8-XRK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="8ku-rn-Ndv"/>
                             <constraint firstItem="l5n-n0-bfY" firstAttribute="top" secondItem="TKU-ap-sn5" secondAttribute="bottom" constant="8" id="8qm-Km-U0q"/>
+                            <constraint firstItem="iaE-aq-uDF" firstAttribute="centerX" secondItem="suc-o8-XRK" secondAttribute="centerX" id="A8n-lm-UOJ"/>
                             <constraint firstAttribute="trailing" secondItem="suc-o8-XRK" secondAttribute="trailing" constant="20" id="BsD-3H-lim"/>
                             <constraint firstItem="suc-o8-XRK" firstAttribute="top" secondItem="NjX-LQ-LpW" secondAttribute="bottom" constant="8" id="Byk-0j-yXC"/>
                             <constraint firstItem="d6b-NA-GgX" firstAttribute="top" secondItem="l5n-n0-bfY" secondAttribute="bottom" constant="8" id="FJM-Wo-xe0"/>
@@ -143,6 +143,7 @@
                             <constraint firstItem="ves-US-Vvu" firstAttribute="leading" secondItem="gDT-ET-SbD" secondAttribute="leading" id="XUy-79-Xz5"/>
                             <constraint firstItem="l5n-n0-bfY" firstAttribute="trailing" secondItem="TKU-ap-sn5" secondAttribute="trailing" id="YUG-ej-gB3"/>
                             <constraint firstItem="ves-US-Vvu" firstAttribute="trailing" secondItem="gDT-ET-SbD" secondAttribute="trailing" id="ZSC-D5-pAj"/>
+                            <constraint firstItem="iaE-aq-uDF" firstAttribute="top" secondItem="suc-o8-XRK" secondAttribute="bottom" constant="10" id="ZXm-Sz-PaM"/>
                             <constraint firstItem="3SU-WJ-V0X" firstAttribute="top" secondItem="yI8-7f-B90" secondAttribute="bottom" constant="8" id="bLK-OB-kiD"/>
                             <constraint firstItem="3SU-WJ-V0X" firstAttribute="top" secondItem="yI8-7f-B90" secondAttribute="bottom" constant="8" id="bts-Ri-NRP"/>
                             <constraint firstItem="yI8-7f-B90" firstAttribute="leading" secondItem="uZf-ve-z94" secondAttribute="leading" id="d9s-2t-tdB"/>

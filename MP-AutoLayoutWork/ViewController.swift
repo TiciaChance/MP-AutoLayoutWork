@@ -19,7 +19,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet weak var imageButton: UIButton!
     
-    let states = [ "Pon De Floor", "Be Together", "Lean On", "Light It Up", "Powerful", "All My Love", "Watch Out For This", "Night riders"]
+    let songs = [ "Pon De Floor", "Be Together", "Lean On", "Light It Up", "Powerful", "All My Love", "Watch Out For This", "Night riders"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         statePicker.dataSource = self
         statePicker.delegate = self
         
+        let image = #imageLiteral(resourceName: "major")
+      //  imageButton = UIButton.withType(UIButtonType.system) as UIButton
+        imageButton.setImage(image,for:UIControlState.normal)
     }
 
     @IBAction func stateButtonTapped(_ sender: AnyObject) {
@@ -42,18 +45,18 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return states.count
+        return songs.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        return states[row]
+        return songs[row]
         
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     
-        chooseStateButton.setTitle(states[row], for: UIControlState.normal)
+        chooseStateButton.setTitle(songs[row], for: UIControlState.normal)
         statePicker.isHidden = true
 
     }
