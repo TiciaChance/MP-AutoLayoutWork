@@ -101,6 +101,9 @@
                                     <constraint firstAttribute="width" constant="128" id="3dh-Ta-gSa"/>
                                 </constraints>
                                 <state key="normal" title="Choose Your State"/>
+                                <connections>
+                                    <action selector="stateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t8F-cG-Rvh"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="suc-o8-XRK">
                                 <constraints>
@@ -152,6 +155,10 @@
                             <constraint firstItem="3SU-WJ-V0X" firstAttribute="leading" secondItem="yI8-7f-B90" secondAttribute="leading" id="yi1-k6-o1S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chooseStateButton" destination="NjX-LQ-LpW" id="wzB-Ib-Jv7"/>
+                        <outlet property="statePicker" destination="suc-o8-XRK" id="E4s-vM-rzu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
